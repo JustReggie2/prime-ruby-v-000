@@ -4,6 +4,7 @@ def prime?(x)
   elsif (2..x - 1).each do |n|
     (x % n) == 0
     true
+  end
   else
     false
   end
