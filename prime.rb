@@ -3,6 +3,9 @@ def prime?(x)
     false
   elsif (2..x - 1).each do |n|
     (x % n) == 0
+    true
+  else
+    false
   end
 
 end
