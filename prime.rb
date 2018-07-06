@@ -1,12 +1,9 @@
-def prime?(x)
-  if x < 2
-    false
-  elsif (2..x - 1).each do |n|
-    (x % n) == 0
-    true
-  end
-  else
-    false
-  end
-
+def prime? (n)
+    if n <= 1
+        false
+    elsif n == 2
+        true
+    else 
+        (2..n/2).none? { |i| n % i == 0}
+    end
 end
